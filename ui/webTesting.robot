@@ -3,7 +3,7 @@ Library     Browser
 
 *** Variables ***
 ${BROWSER}    chromium
-${HEADLESS}    false
+${HEADLESS}    true
 
 *** Test Cases ***
 Verificar textos en el portal Coca Cola Andina
