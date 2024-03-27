@@ -37,10 +37,11 @@ jobs:
         run: |
           rfbrowser init
       
+      - name: Run Robot Framework tests api
+        run: |
+          robot apis
 
       - name: Run Robot Framework tests ui
         run: |
           robot ui
-      - name: Run Robot Framework tests api
-        run: |
-          robot apis
+   
