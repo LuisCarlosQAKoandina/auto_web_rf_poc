@@ -2,3 +2,4 @@ report/*
 config/setup.yml
 config/setup_bd.yml
 browser/*
+playwright-log.txt
