@@ -29,7 +29,6 @@ jobs:
       - name: Install dependencies 
         run: |
           pip install robotframework
-          pip install robotframework-requests
           pip install robotframework-browser
 
 
@@ -37,11 +36,11 @@ jobs:
         run: |
           rfbrowser init
       
-      - name: Run Robot Framework tests api
+      - name: Run headless
         run: |
-          robot apis
+          robot --outputdir reports  tests
 
-      - name: Run Robot Framework tests ui
+      - name: Run GUI
         run: |
-          robot ui
+          robot --outputdir reports -v HEADLESS:False tests
    
