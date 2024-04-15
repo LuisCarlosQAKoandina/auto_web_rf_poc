@@ -2,7 +2,7 @@
 
 ## Overview
 
-This README provides instructions for setting up the environment to run automation tests using Robot Framework for both API and web testing with the Browser library.
+This README provides instructions for setting up the environment to run automation tests using Robot Framework for web testing with the Browser library.
 
 ## Prerequisites
 
@@ -10,22 +10,6 @@ This README provides instructions for setting up the environment to run automati
 
 2. **PIP**: PIP is a package manager for Python. It usually comes installed with Python by default. You can verify by running `pip --version` in your terminal.
 
-3. **Robot Framework**: Install Robot Framework using PIP by running the following command:
-   ```
-   pip install robotframework
-   ```
-
-4. **Browser Library**: For web testing, we'll need the Browser library. Install it using PIP:
-
-    ```
-    node --version
-    npm --version
-    pip install robotframework-browser
-    rfbrowser init
-   ```
-
-
-6. **IDE/Text Editor**: You can use any text editor or IDE of your choice. Popular choices include Visual Studio Code y PyCharm.
 
 ## Setup Instructions
 
@@ -38,17 +22,22 @@ This README provides instructions for setting up the environment to run automati
    pip install -r requirements.txt
    ```
 
+4. **Browser Library**: For web testing, we'll need the Browser library. Install it using PIP:
+
+    ```
+    node --version
+    npm --version
+    rfbrowser init
+   ```
 
 4. **Run Tests**: To run your tests, use the `robot` command followed by the path to your test suite file. For example:
-   ```
-   robot apis
-   ```
+  
+  - Running using GUI
 
-   For web testing with the Browser library:
    ```
-   robot ui
+   robot tests  -v HEADLESS:False
    ```
+ 
+
 5. **View Test Results**: Once the tests finish executing, Robot Framework generates detailed reports. Open the generated report to view the test results.
 
-
-By following these steps, you should have a setup ready to execute automation tests using Robot Framework for both API and web testing with the Browser library. Happy testing!
