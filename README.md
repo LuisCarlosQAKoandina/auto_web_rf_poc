@@ -35,7 +35,15 @@ This README provides instructions for setting up the environment to run automati
   - Running using GUI
 
    ```
-   robot tests  -v HEADLESS:False
+   robot --outputdir reports -v HEADLESS:False tests
+
+   ```
+
+ - Running using HEADLESS
+
+   ```
+   robot --outputdir reports  tests
+
    ```
  
 
