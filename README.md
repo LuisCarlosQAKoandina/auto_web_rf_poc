@@ -1,8 +1,4 @@
-# README - Setup for QA Automation Testing using Robot Framework
-
-## Overview
-
-This README provides instructions for setting up the environment to run automation tests using Robot Framework for web testing with the Browser library.
+# QA Automation Testing using Robot Framework in Portal B2B
 
 ## Prerequisites
 
@@ -45,7 +41,6 @@ This README provides instructions for setting up the environment to run automati
    robot --outputdir reports  tests
 
    ```
- 
 
 5. **View Test Results**: Once the tests finish executing, Robot Framework generates detailed reports. Open the generated report to view the test results.
 
